@@ -35,6 +35,8 @@ git clone <this repo>
 
 bundle install
 
+bin/setup
+
 bundle exec rails s
 
 
