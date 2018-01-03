@@ -35,7 +35,7 @@ git clone https://github.com/bunnymatic/rails-collection-render-speed-test
 cd rails-collection-render-speed-test
 bin/setup
 
-bundle exec rails s
+rails s
 
 ab -n 2 http://localhost:3000/things
 ab -n 2 http://localhost:3000/things?template=1
