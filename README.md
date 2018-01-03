@@ -31,18 +31,15 @@ where the second 2 are %1200 faster.
 Try it for yourself.
 
 ```
-git clone <this repo>
-
-bundle install
-
+git clone https://github.com/bunnymatic/rails-collection-render-speed-test
+cd rails-collection-render-speed-test
 bin/setup
 
 bundle exec rails s
 
-
-$ ab -n 2 http://localhost:3000/things
-$ ab -n 2 http://localhost:3000/things?template=1
-$ ab -n 2 http://localhost:3000/things?template=2
+ab -n 2 http://localhost:3000/things
+ab -n 2 http://localhost:3000/things?template=1
+ab -n 2 http://localhost:3000/things?template=2
 ```
 
 Compare your results
